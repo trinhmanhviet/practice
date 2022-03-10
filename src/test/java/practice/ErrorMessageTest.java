@@ -62,7 +62,7 @@ public class ErrorMessageTest {
 		WebElement loginBtn = driver.findElement(By.xpath("//button[@class='submit signInBtn']"));
 		wait.until(ExpectedConditions.visibilityOf(goToLoginBtn));
 		goToLoginBtn.click();
-		Thread.sleep(200);
+		//Thread.sleep(200);
 		driver.findElement(By.xpath("//input[@id='inputUsername']")).sendKeys("rahul");
 		driver.findElement(By.xpath("//input[@name='inputPassword']")).sendKeys(rightPass);
 		wait.until(ExpectedConditions.elementToBeClickable(rmbID));
